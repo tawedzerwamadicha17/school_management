@@ -1,0 +1,53 @@
+{
+ "doctype": "DocType",
+ "name": "Promotion Run Item",
+ "module": "School Management",
+ "autoname": "hash",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 1,
+ "editable_grid": 1,
+ "track_changes": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "School Student",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Data",
+   "label": "Outcome",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "average",
+   "fieldtype": "Float",
+   "label": "Average",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message",
+   "in_list_view": 1
+  }
+ ],
+ "field_order": [
+  "student",
+  "student_name",
+  "outcome",
+  "average",
+  "message"
+ ]
+}

@@ -1,0 +1,220 @@
+{
+ "doctype": "Workspace",
+ "name": "School Management",
+ "label": "School Management",
+ "title": "School Management",
+ "module": "School Management",
+ "public": 1,
+ "is_hidden": 0,
+ "icon": "education",
+ "indicator_color": "blue",
+ "sequence_id": 1,
+ "content": "[{\"id\": \"h1\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>School Management</b></span>\", \"col\": 12}}, {\"id\": \"n0\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Total Students\", \"col\": 3}}, {\"id\": \"n1\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Active Students\", \"col\": 3}}, {\"id\": \"n2\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Students Promoted\", \"col\": 3}}, {\"id\": \"n3\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Students Retained\", \"col\": 3}}, {\"id\": \"sp1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"h2\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Quick Access</b></span>\", \"col\": 12}}, {\"id\": \"s0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"School Student\", \"col\": 3}}, {\"id\": \"s1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Promotion Run\", \"col\": 3}}, {\"id\": \"s2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Promotion Policy\", \"col\": 3}}, {\"id\": \"s3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"School Level\", \"col\": 3}}, {\"id\": \"sp2\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"h3\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Setup & Records</b></span>\", \"col\": 12}}, {\"id\": \"c0\", \"type\": \"card\", \"data\": {\"card_name\": \"People & Classes\", \"col\": 4}}, {\"id\": \"c1\", \"type\": \"card\", \"data\": {\"card_name\": \"Academic Records\", \"col\": 4}}, {\"id\": \"c2\", \"type\": \"card\", \"data\": {\"card_name\": \"Promotion\", \"col\": 4}}, {\"id\": \"c3\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
+ "shortcuts": [
+  {
+   "label": "School Student",
+   "link_to": "School Student",
+   "type": "DocType",
+   "doc_view": "List",
+   "color": "#2490EF"
+  },
+  {
+   "label": "Promotion Run",
+   "link_to": "Promotion Run",
+   "type": "DocType",
+   "doc_view": "List",
+   "color": "#7B61FF"
+  },
+  {
+   "label": "Promotion Policy",
+   "link_to": "Promotion Policy",
+   "type": "DocType",
+   "doc_view": "List",
+   "color": "#FF8C00"
+  },
+  {
+   "label": "School Level",
+   "link_to": "School Level",
+   "type": "DocType",
+   "doc_view": "List",
+   "color": "#29CD42"
+  }
+ ],
+ "number_cards": [
+  {
+   "label": "Total Students",
+   "number_card_name": "Total Students"
+  },
+  {
+   "label": "Active Students",
+   "number_card_name": "Active Students"
+  },
+  {
+   "label": "Students Promoted",
+   "number_card_name": "Students Promoted"
+  },
+  {
+   "label": "Students Retained",
+   "number_card_name": "Students Retained"
+  }
+ ],
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "People & Classes",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "link_count": 2
+  },
+  {
+   "type": "Link",
+   "label": "School Student",
+   "link_to": "School Student",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Class",
+   "link_to": "School Class",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Academic Records",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "link_count": 6
+  },
+  {
+   "type": "Link",
+   "label": "School Academic Year",
+   "link_to": "School Academic Year",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Academic Term",
+   "link_to": "School Academic Term",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Subject",
+   "link_to": "School Subject",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Assessment Result",
+   "link_to": "School Assessment Result",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Attendance",
+   "link_to": "School Attendance",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "School Fee",
+   "link_to": "School Fee",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Promotion",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "link_count": 4
+  },
+  {
+   "type": "Link",
+   "label": "School Level",
+   "link_to": "School Level",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Promotion Policy",
+   "link_to": "Promotion Policy",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Promotion Run",
+   "link_to": "Promotion Run",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Link",
+   "label": "Level Progression",
+   "link_to": "Level Progression",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  },
+  {
+   "type": "Card Break",
+   "label": "Settings",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0,
+   "link_count": 1
+  },
+  {
+   "type": "Link",
+   "label": "School Management Settings",
+   "link_to": "School Management Settings",
+   "link_type": "DocType",
+   "hidden": 0,
+   "is_query_report": 0,
+   "onboard": 0
+  }
+ ],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Academics User"
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "doctype": "DocType",
+ "name": "School Level",
+ "module": "School Management",
+ "autoname": "field:level_name",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 0,
+ "editable_grid": 0,
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "level_number",
+   "fieldtype": "Int",
+   "label": "Level Number",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "level_name",
+   "fieldtype": "Data",
+   "label": "Level Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "required_credits",
+   "fieldtype": "Int",
+   "label": "Required Credits",
+   "default": "100"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "lms_courses",
+   "fieldtype": "Table",
+   "label": "LMS Courses",
+   "options": "Level LMS Course",
+   "description": "Students in this level are enrolled in these LMS courses"
+  }
+ ],
+ "field_order": [
+  "level_number",
+  "level_name",
+  "required_credits",
+  "description",
+  "lms_courses"
+ ],
+ "naming_rule": "By fieldname",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Academics User",
+   "read": 1,
+   "report": 1
+  }
+ ]
+}

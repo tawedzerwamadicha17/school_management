@@ -1,0 +1,112 @@
+{
+ "doctype": "DocType",
+ "name": "Promotion Policy",
+ "module": "School Management",
+ "autoname": "format:POL-{#####}",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 0,
+ "editable_grid": 0,
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "school_level",
+   "fieldtype": "Link",
+   "label": "School Level",
+   "options": "School Level",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "effective_from_year",
+   "fieldtype": "Link",
+   "label": "Effective From Year",
+   "options": "School Academic Year",
+   "description": "Blank = applies from the beginning. The latest policy effective for the term's year is used."
+  },
+  {
+   "fieldname": "min_average",
+   "fieldtype": "Float",
+   "label": "Min Average (%)",
+   "default": "50",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "min_subjects_passed",
+   "fieldtype": "Int",
+   "label": "Min Subjects Recorded",
+   "default": "3"
+  },
+  {
+   "fieldname": "max_failed_subjects_allowed",
+   "fieldtype": "Int",
+   "label": "Max Failed Subjects Allowed",
+   "default": "0"
+  },
+  {
+   "fieldname": "pass_mark",
+   "fieldtype": "Float",
+   "label": "Subject Pass Mark (%)",
+   "default": "50"
+  },
+  {
+   "fieldname": "requires_fee_clearance",
+   "fieldtype": "Check",
+   "label": "Requires Fee Clearance"
+  },
+  {
+   "fieldname": "requires_attendance_min",
+   "fieldtype": "Float",
+   "label": "Min Attendance (%)",
+   "default": "0",
+   "description": "0 = not required"
+  },
+  {
+   "fieldname": "requires_lms_completion",
+   "fieldtype": "Check",
+   "label": "Require LMS Completion",
+   "description": "All LMS courses of the level must be 100% complete"
+  },
+  {
+   "fieldname": "auto_approve",
+   "fieldtype": "Check",
+   "label": "Auto Approve",
+   "default": "1"
+  }
+ ],
+ "field_order": [
+  "school_level",
+  "effective_from_year",
+  "min_average",
+  "min_subjects_passed",
+  "max_failed_subjects_allowed",
+  "pass_mark",
+  "requires_fee_clearance",
+  "requires_attendance_min",
+  "requires_lms_completion",
+  "auto_approve"
+ ],
+ "naming_rule": "Expression",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Academics User",
+   "read": 1,
+   "report": 1
+  }
+ ]
+}

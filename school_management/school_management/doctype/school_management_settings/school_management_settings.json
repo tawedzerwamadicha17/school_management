@@ -1,0 +1,53 @@
+{
+ "doctype": "DocType",
+ "name": "School Management Settings",
+ "module": "School Management",
+ "autoname": "",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 0,
+ "editable_grid": 0,
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "auto_create_lms_users",
+   "fieldtype": "Check",
+   "label": "Auto-create LMS User for every Student",
+   "default": "1",
+   "description": "Uses the Student's email. The User gets the LMS Student role and the Student is linked to it."
+  },
+  {
+   "fieldname": "send_welcome_email",
+   "fieldtype": "Check",
+   "label": "Send welcome email to new users",
+   "default": "1",
+   "description": "Lets students set their password. Needs an outgoing email account."
+  }
+ ],
+ "field_order": [
+  "auto_create_lms_users",
+  "send_welcome_email"
+ ],
+ "issingle": 1,
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Academics User",
+   "read": 1,
+   "report": 1
+  }
+ ]
+}

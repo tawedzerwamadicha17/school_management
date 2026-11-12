@@ -1,0 +1,35 @@
+{
+ "doctype": "DocType",
+ "name": "Level LMS Course",
+ "module": "School Management",
+ "autoname": "hash",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 1,
+ "editable_grid": 1,
+ "track_changes": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "LMS Course",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "course_title",
+   "fieldtype": "Data",
+   "label": "Course Title",
+   "fetch_from": "course.title",
+   "read_only": 1,
+   "in_list_view": 1
+  }
+ ],
+ "field_order": [
+  "course",
+  "course_title"
+ ]
+}

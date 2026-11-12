@@ -1,0 +1,138 @@
+{
+ "doctype": "DocType",
+ "name": "Level Progression",
+ "module": "School Management",
+ "autoname": "format:LP-{#####}",
+ "custom": 0,
+ "engine": "InnoDB",
+ "istable": 0,
+ "editable_grid": 0,
+ "track_changes": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "fields": [
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "School Student",
+   "reqd": 1,
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name",
+   "fetch_from": "student.student_name",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "from_level",
+   "fieldtype": "Link",
+   "label": "From Level",
+   "options": "School Level",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "to_level",
+   "fieldtype": "Link",
+   "label": "To Level",
+   "options": "School Level",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "School Academic Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "progression_date",
+   "fieldtype": "Date",
+   "label": "Progression Date",
+   "default": "Today",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average_score",
+   "fieldtype": "Float",
+   "label": "Average Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Select",
+   "label": "Outcome",
+   "options": "Promoted\nRetained\nGraduated",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "decision_type",
+   "fieldtype": "Select",
+   "label": "Decision Type",
+   "options": "Auto\nManual\nConditional",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "overridden_by",
+   "fieldtype": "Link",
+   "label": "Overridden By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "conditional_flags",
+   "fieldtype": "Code",
+   "label": "Conditional Flags",
+   "options": "JSON",
+   "read_only": 1
+  }
+ ],
+ "field_order": [
+  "student",
+  "student_name",
+  "from_level",
+  "to_level",
+  "academic_term",
+  "progression_date",
+  "average_score",
+  "outcome",
+  "decision_type",
+  "reason",
+  "overridden_by",
+  "conditional_flags"
+ ],
+ "naming_rule": "Expression",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "report": 1,
+   "export": 1,
+   "share": 1,
+   "print": 1,
+   "email": 1
+  },
+  {
+   "role": "Academics User",
+   "read": 1,
+   "report": 1
+  }
+ ]
+}
